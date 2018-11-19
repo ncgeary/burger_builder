@@ -5,13 +5,13 @@ import classes from './Layout.module.css';
 
 const layout = (props) => (
     <Aux>
-        <div>Toolbar, SideDrawer, BackDrop</div>
+        <div>Toolbar, SideDrawer</div>
 
         <main className={classes.Content}>
             {props.children}
         </main>
     </Aux>
-    
+
 );
 
 export default layout;
