@@ -8,7 +8,7 @@ class Modal extends Component{
   // OPTIMIZED: to not update the OrderSummary when it is not needed
 
   shouldComponentUpdate(nextProps, nextState){
-    return nextProps.show !== this.props.show;
+    return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
   }
 
   componentWillUpdate(){
